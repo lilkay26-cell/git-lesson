@@ -9,37 +9,66 @@
   </head>
   <body class="py-[30px] overflow-x-hidden max-w-full h-screen">
     <!-- navbar -->
-    <nav class="px-5 sm:px-8 md:px-12 lg:px-[105px] bg-[#F5F7FA]">
-      <div
-        class="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-10"
+    <nav class="mx-3 sm:mx-5 lg:mx-0 bg-[#F5F7FA] rounded-xl px-5 sm:px-8 md:px-12 lg:px-[105px]">
+  <div class="flex justify-between items-center py-4 lg:py-0">
+
+    <!-- Logo -->
+    <img src="./Logo Nav.svg" alt="Nexcent logo" />
+
+    <!-- Desktop links -->
+    <div class="hidden lg:flex flex-wrap justify-center gap-x-[50px] gap-y-3">
+      <a href="">Home</a>
+      <a href="">Service</a>
+      <a href="">Feature</a>
+      <a href="">Product</a>
+      <a href="">Testimony</a>
+      <a href="">FAQ</a>
+    </div>
+
+    <!-- Desktop login/signup -->
+    <div class="hidden lg:flex gap-4 items-center">
+      <a href="">Login</a>
+
+      <button
+        class="py-[10px] px-5 bg-[#4CAF4F] text-white rounded-md text-[14px] font-medium hover:bg-[#43A047]"
       >
-        <img src="./Logo  Nav.svg" alt="" />
+        Sign up
+      </button>
+    </div>
 
-        <div class="flex flex-wrap justify-center gap-x-[50px] gap-y-3">
-          <a href="">Home</a>
+    <!-- Hamburger -->
+    <button
+      id="menuButton"
+      class="lg:hidden text-3xl"
+    >
+      ☰
+    </button>
 
-          <a href="">Service</a>
+  </div>
 
-          <a href="">Feature</a>
+  <!-- Mobile menu -->
+  <div
+    id="mobileMenu"
+    class="hidden lg:hidden flex-col gap-5 pb-5 text-center"
+  >
+    <a href="">Home</a>
+    <a href="">Service</a>
+    <a href="">Feature</a>
+    <a href="">Product</a>
+    <a href="">Testimony</a>
+    <a href="">FAQ</a>
 
-          <a href="">Product</a>
+    <div class="flex justify-center gap-4 items-center pt-2">
+      <a href="">Login</a>
 
-          <a href="">Testimony</a>
-
-          <a href="">FAQ</a>
-        </div>
-
-        <div class="flex gap-4 items-center">
-          <a href="">Login</a>
-
-          <button
-            class="py-[10px] px-5 bg-[#4CAF4F] text-white rounded-md text-[14px] font-medium hover:bg-[#43A047]"
-          >
-            Sign up
-          </button>
-        </div>
-      </div>
-    </nav>
+      <button
+        class="py-[10px] px-5 bg-[#4CAF4F] text-white rounded-md text-[14px] font-medium"
+      >
+        Sign up
+      </button>
+    </div>
+  </div>
+</nav>
 
     <!-- section 1 -->
 
